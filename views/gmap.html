@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/base_page.css">
+        <link rel="stylesheet" href="css/gmap.css">
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/gmap.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Google map</title>
+        <style>
+            #map{
+                height:600px;
+                widows: 60%;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <nav id="topbar">
+                <div class="sides">
+                    <a class="elem">Dashboard</a>
+                </div>
+                <ul class="apis elem">
+                    <li>
+                        <a class="nav-link" href="youtube.html">Youtube</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" onclick={getWeather()}>Weather</a>
+                    </li>
+                    <li>
+                        <a class="nav-link current" href="gmap.html">
+                            Map
+                            <div class="arrow-up"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="pornhub.html">Pornhub</a>
+                    </li>
+                </ul>
+                <form class="sides">
+                    <button class="elem"
+                        onclick={signOut()}>
+                        LogOut
+                    </button>
+                </form>
+            </nav>
+            <div id="page-inner">
+                <div class="options">
+                    <button
+                        class="btn btn-secondary my-2 my-sm-0"
+                        onclick="{geoloc()}">
+                        Activate Gelocalisation
+                    </button>
+                    <button 
+                        class="btn btn-secondary my-2 my-sm-0"
+                        onclick="{setNightMode()}">
+                        Activate Night Mode
+                    </button>
+                </div>
+                <div id="map"></div>
+                <script src="js/gmap.js"></script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAks1WnHXgvuLXMqEnEQOWhDY4NyevYJGM&callback=initMap"></script>
+                </div>
+            <script src="js/authentication.js"></script>
+        </div>
+    </body>
+</html>

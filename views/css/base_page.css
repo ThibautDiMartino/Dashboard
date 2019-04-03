@@ -1,0 +1,64 @@
+body {
+    background-color: rgb(232, 244, 255);
+    width: 100%;
+    margin: 0;
+}
+
+#topbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #424558;
+}
+
+a, button {
+    cursor: pointer;
+    padding: 15px 30px;
+}
+
+button {
+    background-color: #424558;
+    border: none;
+    color: #fff;
+}
+
+nav > ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav li {
+    list-style-type: none;
+    width: 150px;
+}
+
+nav ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    width: auto;
+    margin: auto;
+}
+
+.apis {
+    min-width: 20%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 0;
+}
+
+#page-inner {
+    margin: 30px;
+    padding: 10px 20px;
+    background: #fff;
+    border-radius: 15px;
+}

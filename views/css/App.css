@@ -1,0 +1,283 @@
+body {
+  background-color: rgb(232, 244, 255);
+  margin: 0;
+  min-width: 340px;
+}
+
+#topbar {
+  background-color: #424558;
+  padding: 10px 0 10px 0;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#login {
+  width: 900px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.first {
+  display: none;
+}
+
+.form {
+  width:100%;
+  color: #fff;
+  margin-left:5px;
+  z-index: 1000000000;
+}
+
+.fill {
+  margin-left: 7px;
+}
+
+.right {
+  margin-right: 10px;
+}
+
+.login .login-btn {
+  width: 50px;
+}
+
+.login p {
+  display: none;
+}
+
+input[type=text] {
+  width: 200px;
+}
+
+input[type=submit] {
+  background-color:#424558;
+  color: #fff;
+  border: none;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
+
+.sign {
+  display: none;
+}
+
+#signin {
+  margin: 10px;
+}
+
+.signin .sign-btn {
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.signin p {
+  top: 0;
+  padding-left: 10px;
+}
+
+.signin .fill {
+  display: inline-block;
+}
+
+.signin:hover {
+  display: flex;
+  flex-direction: column;
+  width: 215px;
+  margin-right: 5px;
+}
+
+.signin:hover .sign-btn {
+  width: 200px;
+}
+
+.signin:hover input {
+  width: 200px;
+}
+
+.signin:hover .sign {
+  display: inline-block;
+  background-color: #424558;
+}
+
+.signin:hover .sign .fill {
+  display: inline-block;
+  align-content: right;
+}
+
+.signin:hover .signin-btn {
+  padding: 15px 0;
+  width: 215px;
+}
+
+.signin .signin-btn:hover {
+  border-bottom: 2px solid #424558;
+}
+
+#page-inner {
+  background-color: rgb(255, 255, 255);
+  height: 490px;
+  margin: 30px;
+  padding: 15px;
+}
+
+#page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.font-img {
+  width: 100%;
+  max-width: 528px;
+  margin: auto;
+}
+
+.font-img img {
+  width: 100%;
+  max-width: 528px;
+  margin: auto;
+  opacity: 0.99;
+}
+
+.title {
+  text-align: center;
+  color: rgb(113, 186, 255);
+  font-family: 'Franklin Gothic Medium';
+  min-width: 200px;
+}
+
+@media (max-width:680px) {
+    .form, .elem {
+      display: none;
+    }
+
+    nop {
+      display: none;
+    }
+
+    .first {
+      display: inline-block;
+    }
+
+    #login:hover {
+      flex-direction: column;
+      width: 215px;
+    }
+
+    .login .log-btn {
+      padding-top: 5px;
+      padding-bottom: 15px;
+    }  
+    
+    .login:hover .log-btn {
+      margin-right: 1000px;
+      width: 200px;
+    }
+    
+    .login p {
+      display: block;
+      top: 0;
+      padding-left: 10px;
+    }
+
+    .login:hover input {
+      width: 200px;
+    }
+    
+    .login:hover .log {
+      display: inline-block;
+      background-color: #424558;
+    }
+    
+    .login:hover .log .fill {
+      display: inline-block;
+      align-content: right;
+    }
+    
+    .login:hover .login-btn {
+      padding: 15px 0;
+      width: 215px;
+    }
+    
+    .login .login-btn:hover {
+      border-bottom: 2px solid #424558;
+    }
+}
+
+.connections {
+  list-style: none;
+  margin: 1em 0;
+  padding: 0;
+  direction: ltr;
+  margin: auto;
+  text-align: left;
+}
+
+.connections > .api-con {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.api-con {
+  height: 40px;
+}
+
+.con-btn {
+  width: 220px;
+  height: 40px;
+  display: flex;
+  padding-top: 9px;
+}
+
+.icon-wrapper {
+  margin-left: 15px;
+}
+
+.icon {
+  width: 18px;
+}
+
+.sign-name {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 15px;
+}
+
+.hidden {
+  display: none;
+}
+
+.gbtn {
+  background-color: #fff;
+}
+
+.fbtn {
+  background-color: #3b5998;
+  color: #fff;
+}
+
+.tbtn {
+  background-color: #55acee;
+  color: #fff;
+}
+
+.gitbtn {
+  background-color: #333;
+  color: #fff;
+}
+
+.emailbtn {
+  background-color: #db4437;
+  color: #fff;
+}
+
+.telbtn {
+  background-color: #02bd7e;
+  color: #fff;
+}

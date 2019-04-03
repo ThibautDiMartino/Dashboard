@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube Search</title>
+        <link rel="stylesheet" href="css/base_page.css">
+        <link rel="stylesheet" href="css/youtube.css">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="js/youtube.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <nav id="topbar">
+                <div class="sides">
+                    <a class="elem">Dashboard</a>
+                </div>
+                <ul class="apis elem">
+                    <li>
+                        <a class="nav-link current" href="youtube.html">
+                            Youtube
+                            <div class="arrow-up"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" onclick={getWeather()}>Weather</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="gmap.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="pornhub.html">Pornhub</a>
+                    </li>
+                </ul>
+                <form class="sides">
+                    <button class="elem"
+                        onclick={signOut()}>
+                        LogOut
+                    </button>
+                </form>
+            </nav>
+            <div id="page-inner">
+                <div>
+                    <h1 class="w100 text-center">YouTube Viral Search</a></h1>
+                </div>
+                <div class="search">
+                        <form action="#">
+                            <input type="text" id="search" placeholder="Type something..." autocomplete="off" class="form-control" />
+                            <input type="submit" value="Search" class="form-control btn btn-primary w100">
+                        </form>
+                </div>
+                <div id="results"></div>
+            </div>
+            <script src="js/authentication.js"></script>
+        </div>
+    </body>
+</html>

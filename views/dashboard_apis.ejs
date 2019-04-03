@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/apis.css">
+        <link rel="stylesheet" href="css/base_page.css">
+        <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+        <title>Main Page</title>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <nav id="topbar">
+                <div class="sides">
+                    <a class="elem">Dashboard</a>
+                </div>
+                <ul class="apis elem">
+                    <li>
+                        <a class="nav-link" href="youtube.html">Youtube</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" onclick={getWeather()}>Weather</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="gmap.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="pornhub.html">Pornhub</a>
+                    </li>
+                </ul>
+                <form class="sides">
+                    <button class="elem"
+                        onclick={signOut()}>
+                        LogOut
+                    </button>
+                </form>
+            </nav>
+            <div id="page-inner">
+                <h1>Available widgets :</h1>
+                <ul id="widgets">
+                    <li>
+                        <a href="youtube.html"><img src="images/yt_logo.png"/></a>
+                    </li>
+                    <li>
+                        <a href="weather.html"><img src="images/weather.png"/></a>
+                    </li>
+                    <li>
+                        <a href="gmap.html"><img src="images/map.png"/></a>
+                    </li>
+                    <li>
+                        <a href="pornhub.html"><img src="images/pornhub.jpg"/></a>
+                    </li>
+                </ul>
+            </div>
+            <script src="js/authentication.js"></script>
+        </div>
+    </body>
+</html>

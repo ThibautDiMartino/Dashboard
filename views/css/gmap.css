@@ -1,0 +1,21 @@
+.current {
+    border-bottom: 5px solid #0070bb;
+    background-color: RGBa(000 , 112, 192, 0.15);
+}
+
+.arrow-up {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #0070bb;
+    position: absolute;
+    margin-top: 6px;
+    margin-left: 5.5px;
+}
+
+.options {
+    width: 374px;
+    margin: auto;
+    margin-bottom: 10px;
+}

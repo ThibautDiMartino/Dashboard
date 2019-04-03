@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="css/base_page.css">
+        <link rel="stylesheet" href="css/weather.css">
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-342083-5"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script> 
+        <script src="js/weather.js"></script>
+        <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments)};
+                gtag('js', new Date());
+                gtag('config', 'UA-342083-5');
+            </script>
+        <title>Weather</title>
+    </head>
+    <body>
+        <div id="page-wrapper">
+            <nav id="topbar">
+                <div class="sides">
+                    <a class="elem">Dashboard</a>
+                </div>
+                <ul class="apis elem">
+                    <li>
+                        <a class="nav-link" href="youtube.html">Youtube</a>
+                    </li>
+                    <li>
+                        <a class="nav-link current" href="weather.html">
+                            Weather
+                            <div class="arrow-up"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="gmap.html">Map</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="pornhub.html">Pornhub</a>
+                    </li>
+                </ul>
+                <form class="sides">
+                    <button class="elem"
+                        onclick={signOut()}>
+                        LogOut
+                    </button>
+                </form>
+            </nav>
+            <div id="page-inner">
+                <div id="getInfos">
+                    <input id="city" type="text">
+                    <button id="getWeatherForcast">Get Weather</button>
+                </div>
+                <figure class="image is-50x50">
+                    <img src="http://openweathermap.org/img/w/<%= weather.icon %>.png" alt="icon"/>
+                </figure>
+                <div>Weather in : <span class="city-name"><%= weather.city %></span></div> 
+                <div class="temp"><%= weather.temp %></div>
+                <div class="country"><%= weather.description %></div>
+            </div>
+            <script src="js/authentication.js"></script>
+        </div>
+    </body>
+</html>

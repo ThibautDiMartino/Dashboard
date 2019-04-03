@@ -1,0 +1,21 @@
+#page-inner img {
+    width: 200px;
+    margin: auto;
+}
+
+#page-inner h1 {
+    width: 258px;
+    margin: auto;
+}
+
+#widgets {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#page-inner ul > li {
+    list-style-type: none;
+    max-width: 30%;
+    margin: 50px 0;
+}

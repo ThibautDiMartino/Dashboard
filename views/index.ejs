@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <link rel="stylesheet" type="text/css" href="css/App.css" />
+      <title>Dashboard</title>
+      <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBqx-KGWT99dL4bPw5ShdCLLTJN5BfIU_I",
+          authDomain: "dashboard-cd28.firebaseapp.com",
+          databaseURL: "https://dashboard-cd28.firebaseio.com",
+          projectId: "dashboard-cd28",
+          storageBucket: "dashboard-cd28.appspot.com",
+          messagingSenderId: "206636536719"
+        };
+        firebase.initializeApp(config);
+      </script>
+    </head>
+    <body>
+      <div id="page-wrapper">
+        <div id="topbar">
+          <form id="login" class="login">
+            <div>
+              <input type="submit" value="Log in" class="first fill log-btn" />
+              <label class="form log"><nop>Identifier:</nop>
+                <p>Identifier:</p>
+                <input type="text" class="fill" placeholder="Your e-mail or nickname"/>
+              </label>
+              <label class="form log"><nop>Password:</nop>
+                <p>Password:</p>
+                <input type="password" class="fill" placeholder="Your password"/>
+              </label>
+              <input type="submit" value="Log in" class="form elem log login-btn" />
+            </div>
+          </form>
+          <form id="signin" class="signin">
+            <div>
+              <input type="submit" value="Sign in" class="right fill sign-btn" />
+              <label class="form sign">
+                <p>Your e-mail:</p>
+                <input type="text" class="fill" placeholder="Your e-mail"/>
+              </label>
+              <label class="form sign">
+                <p>Your nickname:</p>
+                <input type="text" class="fill" placeholder="Your nickname"/>
+              </label>
+              <label class="form sign">
+                <p>Your password:</p>
+                <input type="password" class="fill" placeholder="Your password"/>
+              </label>
+              <label class="form sign">
+                <p>Confirm your password:</p>
+                <input type="password" class="fill" placeholder="Your password"/>
+              </label>
+              <input type="submit" value="Sign in" class="form sign signin-btn" />
+            </div>
+          </form>
+        </div>
+        <div id="page-inner">
+          <div id="page-content">
+            <h1 class="title"> <strong>Create your Dashboard Online</strong></h1>
+            <div class="front side">
+              <h1 class="logo title">You may Login</h1>
+            </div>
+            <ul class="connections">
+              <li class="api-con">
+                <button class="con-btn gbtn" data-provider-id="google.com" data-upgraded=",MaterialButton" onclick={GoogleSignIn()}>
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with Google
+                  </span>
+                  <span class="hidden">
+                    Google
+                  </span>
+                </button>
+              </li>
+              <li class="api-con">
+                <button class="con-btn fbtn" data-provider-id="facebook.com" data-upgraded=",MaterialButton" onclick={FacebookSignIn()}>
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/facebook.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with Facebook
+                  </span>
+                  <span class="hidden">
+                    Facebook
+                  </span>
+                </button>
+              </li>
+              <li class="api-con">
+                <button class="con-btn tbtn" data-provider-id="twitter.com" data-upgraded=",MaterialButton" onclick={TwitterSignIn()}>
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/twitter.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with Twitter
+                  </span>
+                  <span class="hidden">
+                    Twitter
+                  </span>
+                </button>
+              </li>
+              <li class="api-con">
+                <button class="con-btn gitbtn" data-provider-id="github.com" data-upgraded=",MaterialButton" onclick={GithubSignIn()}>
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/github.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with Github
+                  </span>
+                  <span class="hidden">
+                    Github
+                  </span>
+                </button>
+              </li>
+              <li class="api-con">
+                <button class="con-btn emailbtn" data-provider-id="password" data-upgraded=",MaterialButton">
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/mail.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with email
+                  </span>
+                  <span class="hidden">
+                    Email
+                  </span>
+                </button>
+              </li>
+              <li class="api-con">
+                <button class="con-btn telbtn" data-provider-id="phone" data-upgraded=",MaterialButton" onclick={phoneSignIn()}>                
+                  <span class="icon-wrapper">
+                    <img class="icon" alt="" src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/phone.svg"/>
+                  </span>
+                  <span class="sign-name">
+                    Sign in with phone
+                  </span>
+                  <span class="hidden">
+                    Phone
+                  </span>
+                </button>
+              </li>
+              <div id="recaptcha-container">
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="js/Authentication.js"></script>
+    </body>
+</html>
